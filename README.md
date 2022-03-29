@@ -67,7 +67,7 @@ To use locally, run  `npm run seed` from your terminal but in the root of the di
 
 To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application.
 
-The deployed application can be used at [Heroku](https://sparkling-spaces.herokuapp.com/) 
+The deployed application can be used at [Heroku](https://young-fjord-08052.herokuapp.com/) 
 
 You can also use `npm start` while in the client folder to run items as well as in the server folder you can use `npm run watch`. To build for production ensure you run `npm run build` so that it produces a build for deployment. 
 
