@@ -6,7 +6,7 @@ import { useQuery } from "@apollo/client";
 import { QUERY_MAIDS } from '../utils/queries';
 
 const Maidlist = () => {
-	const { loading, data } = useQuery(QUERY_MAIDS);
+	const { data } = useQuery(QUERY_MAIDS);
   	const maids = data?.maids || [];
 
 	return (

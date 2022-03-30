@@ -46,17 +46,17 @@ const Login = (props) => {
         <div className="columns is-mobile is-vcentered">
 
           <div className="column is-half">
-            <figure className="image is-4x3 is-inline-block">
-              <img src={LoginImage} alt="cleaning the kitchen"/>
-            </figure>
+            <div className="">
+              <img src={LoginImage} alt="cleaning the kitchen" />
+            </div>
           </div>
 
           <div id='login-form' className='column is-half'>
-            <div className='title is-1'>Welcome Back!</div><br/>
+            <div className='title is-1'>Welcome Back!</div><br />
 
             <form onSubmit={handleFormSubmit}>
               <div className='field mt-4'>
-                <p className='control'>
+                <div className='control'>
                   <input
                     className="input is-link is-rounded"
                     placeholder="Your email"
@@ -65,8 +65,8 @@ const Login = (props) => {
                     id="email"
                     value={formState.email}
                     onChange={handleChange}
-                />
-                </p>
+                  />
+                </div>
               </div>
               <div className='field'>
                 <p className='control'>
@@ -83,14 +83,14 @@ const Login = (props) => {
               </div>
               <div className='field'>
                 <p className='control'>
-                  <button className="button is-link is-rounded is-outlined" type="submit">
+                  <button className="button is-danger is-rounded" type="submit">
                     Login
                   </button>
                 </p>
                 <a href="/signup" className="has-text-link is-underlined">No account? Sign up today!</a>
               </div>
-          </form>
-            {error && <div>Login failed</div>}   
+            </form>
+            {error && <div>Login failed</div>}
           </div>
         </div>
       </div>

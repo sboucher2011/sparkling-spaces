@@ -17,8 +17,8 @@
   .more-info {
     margin-right: 25px;
   }
-  /* 
-  
+   
+/*   
   .cards {
       margin: 75px;
       padding: 20px;
@@ -30,6 +30,7 @@
       min-height: 500px;
   }
   
+  
   .card-content {
     display: flex;
     flex-direction: column;
@@ -38,9 +39,9 @@
   }
   
   .card-content img {
-    height: 146px;
-  }
-  */
+    height: 250px;
+  } */
+ 
   
   @media screen and (max-width: 820px) {
     .card-container {

@@ -1,4 +1,4 @@
-<h1 align="center">Squeaky Clean</h1> 
+<h1 align="center">Sparkling Spaces </h1> 
 
 ![](https://img.shields.io/badge/Database-MongoDB-yellow?style=flat-square&logo=mongoDB) ![](https://img.shields.io/badge/npm%20package-express-orange?style=flat-square&logo=npm) ![](https://img.shields.io/badge/npm%20package-mongoose-cyan?style=flat-square&logo=npm) 
 
@@ -67,24 +67,23 @@ To use locally, run  `npm run seed` from your terminal but in the root of the di
 
 To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application.
 
-The deployed application can be used at [Heroku](https://young-fjord-08052.herokuapp.com/) 
+The deployed application can be used at [Heroku](https://pacific-sea-53881.herokuapp.com/) 
 
 You can also use `npm start` while in the client folder to run items as well as in the server folder you can use `npm run watch`. To build for production ensure you run `npm run build` so that it produces a build for deployment. 
 
 ## Images
-<img src="https://github.com/msdale/burn-book/blob/feature/alexis3/client/public/Homepage.png">      
-<img src="https://github.com/msdale/burn-book/blob/feature/alexis3/client/public/UserDashboard.png">
-<img src="https://github.com/msdale/burn-book/blob/feature/alexis3/client/public/Maid%20List.png">
+![Screenshot](https://github.com/ivydo/sparkling-spaces/blob/main/client/src/assets/screenshots/screenshot1.png)
+![Screenshot](https://github.com/ivydo/sparkling-spaces/blob/main/client/src/assets/screenshots/screenshot2.png)
+![Screenshot](https://github.com/ivydo/sparkling-spaces/blob/main/client/src/assets/screenshots/screenshot3.png)
+![Screenshot](https://github.com/ivydo/sparkling-spaces/blob/main/client/src/assets/screenshots/screenshot4.png)
 
 ## License Details 
 This project is MIT licensed.
 
-## Questions
-Open a new issue under the repo at https://github.com/msdale/burn-book/issues
 
 ## Collaborators
+Ivy Do [GitHub Link](https://github.com/ivydo)  
 Alexis El Amrani [GitHub Link](https://github.com/alexisn84)  
 Shawna Boucher [GitHub Link](https://github.com/sboucher2011)  
 Mark Dale [GitHub Link](https://github.com/msdale)  
-Ivy Do [GitHub Link](https://github.com/ivydo)  
 Patty Manecci [GitHub Link](https://github.com/PManecci)

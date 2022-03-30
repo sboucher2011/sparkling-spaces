@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <header>
-      <nav className="navbar is-link has-text-light">
+      <nav className="navbar is-link has-text-light is-responsive">
         {Auth.loggedIn() ? (
           <>
             <div className='navbar-brand'>

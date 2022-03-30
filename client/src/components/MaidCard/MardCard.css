@@ -4,4 +4,10 @@
 
 .card-holder {
     display: flex;
+    height: 400px;
+    
+}
+
+.maid-buttons {
+    margin-right: 10px;
 }

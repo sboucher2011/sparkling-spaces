@@ -7,7 +7,7 @@ import "./ReviewForm.css"
 //images
 // import ReviewImage from "../../assets/profile/review.jpg"
 
-const ReviewForm = () => {
+const ReviewForm = ({maidUsername}) => {
   const [reviewText, setText] = useState('');
   const [characterCount, setCharacterCount] = useState(0);
   const [addReview, { error }] = useMutation(ADD_REVIEW, {
@@ -49,9 +49,8 @@ const ReviewForm = () => {
     try {
       // add review to database
       await addReview({
-        variables: { reviewText }
-      });
-
+        variables: { reviewText, maidUsername } 
+            });
       // clear form value
       setText('');
       setCharacterCount(0);
@@ -64,10 +63,10 @@ const ReviewForm = () => {
     <div className='review-container'>
       <h1 className='title title-css'>Leave Some Love</h1>
       <form className="field" onSubmit={handleFormSubmit}>
-        <div className='field-input'>
+        <div className='control'>
           <label className="label label-css">Here's what I thought... </label>
-          <div className="control">
-            <input className="input is-link review-input" type="text" placeholder="Everything was great!" onChange={handleChange} value={reviewText}>
+          <div className="">
+            <input className="textarea is-link" type="text" placeholder="Everything was great!" onChange={handleChange} value={reviewText}>
             </input>
           </div>
         </div>
@@ -77,7 +76,7 @@ const ReviewForm = () => {
           {error && <span className=""> Something went wrong...</span>}
         </p>
         <div>
-          <button className="button control is-link is-outlined is-rounded" type="submit">
+          <button className="button control is-danger is-rounded" type="submit">
             Submit
           </button>
         </div>

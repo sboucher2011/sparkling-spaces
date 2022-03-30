@@ -83,7 +83,7 @@ const Signup = () => {
                 <p className='control'>
                   <input
                     className="input is-link is-rounded"
-                    placeholder="******"
+                    placeholder="must be at least 6 characters"
                     name="password"
                     type="password"
                     id="password"
@@ -94,7 +94,7 @@ const Signup = () => {
               </div>
               <div className='field'>
                 <p className='control'>
-                  <button className="button is-link is-rounded is-outlined" type="submit">
+                  <button className="button is-danger is-rounded " type="submit">
                     Login
                   </button>
                 </p>

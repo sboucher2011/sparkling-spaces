@@ -18,7 +18,7 @@ function MaidInfo(props) {
   });
 
   const maid = data?.maid || {};
-  
+
   console.log(maid)
   return (
     <div className='columns'>
@@ -29,7 +29,7 @@ function MaidInfo(props) {
             <div className="card">
               <header className="card-header ">
                 <p className="card-header-title">
-                  More About Me
+                  About Me
                 </p>
               </header>
               <div className="card-image">
@@ -50,27 +50,29 @@ function MaidInfo(props) {
                   </div>
                 </div>
                 <div className="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris.
+                  I'm <strong>{maid.name}</strong> and I treat every home as if it were my own. My belief is "Cleaning and organizing is a practice, not a project."
                 </div>
               </div>
             </div>
           </section>
+          {/* Review Form */}
+          {/* Review Form */}
+          <div className='review-box notification is-primary is-light'><ReviewForm maidUsername={maid.maid_username}/>
+          </div>
+          {/* Review Form */}
+          {/* Review Form */}
+
         </div>
       </div>
       {/* coloum 2 that holds reviews */}
-      <div className='column'>
-        <div className='review-form-container'><ReviewForm/>
-          </div>
-      <h2>My Reviews:</h2>
-      <ReivewList
-        reviews={maid.reviews}
-      /></div>
-      {/* <ReviewForm/>
-      <h2>My Reviews:</h2>
-      <ReivewList
-        reviews={maid.reviews}
-      /> */}
+      <div className='column right-side'>
+        <h2 className='title'>Client Feedback:</h2>
+        <div className="overflow-y-content">
+          <ReivewList
+            reviews={maid.reviews}
+          />
+        </div>
+      </div>
     </div>
   )
 }

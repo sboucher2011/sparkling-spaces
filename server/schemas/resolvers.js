@@ -77,6 +77,7 @@ const resolvers = {
     },
     addReview: async (parent, args, context) => {
       if (context.user) {
+        
         const review = await Review.create({ ...args, username: context.user.username });
 
         await User.findByIdAndUpdate(

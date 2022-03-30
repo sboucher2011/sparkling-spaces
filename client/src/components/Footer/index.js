@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className='page-container'>
             <div className='content-wrap'>
-                <div className='footer has-text-centered has-background-link has-text-light'>
+                <div className='footer has-text-centered has-background-link has-text-light is-responsive'>
                     <div className='content has-text-centered '>
                         <div className="columns is-mobile is-centered ">
                             <div className="column has-text-light">
@@ -43,7 +43,7 @@ function Footer() {
                                         <div className='list-item'>
                                             {/* Filler List Items */}
                                             <li>Customer Support</li>
-                                            <li><div><Link to={"./maiddash"} className='has-text-light'>Employee Dashboard</Link></div></li>
+                                            <li><div><Link to={"./maiddash"} className='has-text-light'>Employee Login</Link></div></li>
                                             <li>Company Policies</li>
                                             <li>Contact Us</li>
                                         </div>

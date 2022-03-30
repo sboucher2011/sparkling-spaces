@@ -14,8 +14,8 @@ const MaidCard = ({ maids }) => {
         maids.slice(0, 3).map(maid => (
           <div key={maid._id} className="card mb-3">
             <div className='card-image'>
-              <div className='image is-4by3'>
-                <img src={Maid1} alt="maid" />;
+              <div className=''>
+                <img src={Maid1} alt="maid" />
               </div>
             </div>
             <div className="card-content">
@@ -30,7 +30,10 @@ const MaidCard = ({ maids }) => {
               <div> Clean Spaces, Clean Mind.
               </div>
             </div>
-            
+            <div className='buttons is-right maid-buttons'>
+              <a href={`/maidinfo/${maid.maid_username}`} className='button is-danger'>Learn More</a>
+              <div className='button is-warning '>Request Me</div>
+            </div>
           </div>
         ))}
     </div>

@@ -32,24 +32,29 @@ const ReactionForm = ({ reviewId }) => {
   };
 
   return (
-    <div>
-      {<p className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}>
-        Character Count: {characterCount}/280
-        {error && <span className="ml-7">Something went wrong...</span>}
-      </p>}
-      <form className="" onSubmit={handleFormSubmit}>
-        <textarea
-          placeholder="Leave a reaction to this review..."
-          value={reactionBody}
-          className="form-input"
-          onChange={handleChange}
-        ></textarea>
-
-        <button className="md-3" type="submit">
-          Submit
-        </button>
-      </form>
+    <div className='review-box'>
+      <div className='field'>
+        <form className="" onSubmit={handleFormSubmit}>
+          <div className='label'>
+            Comment
+          </div>
+          <textarea
+            placeholder=""
+            value={reactionBody}
+            className="input"
+            onChange={handleChange}
+          ></textarea>
+          {<p className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}>
+            Character Count: {characterCount}/280
+            {error && <span className="ml-7">Something went wrong...</span>}
+          </p>}
+          <button className="button is-primary is-right" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
+
   );
 };
 
